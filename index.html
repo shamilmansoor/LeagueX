@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LeagueX</title>
+        <link rel="stylesheet" href="/assets/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+        <Meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1 class="logo"><a href="/index.html">League<span class="X">X</span></a></h1>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <h1>Welcome to League<span class="X">X</span></h1>
+                    <p>Enter the number of teams and how many times each team plays against each other.</p>
+                    <form id="setupForm" onsubmit="createTeams()">
+                        <label for="numTeams">Number of Teams:</label>
+                        <input type="number" id="numTeams" min="3" value="8" required>
+                        <label for="numMatches">Number of Matches:</label>
+                        <input type="number" id="numMatches" min="1" value="1" required>
+                        <button type="submit">Continue</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script src="assets/script.js"></script>
+    </body>
+</html>
